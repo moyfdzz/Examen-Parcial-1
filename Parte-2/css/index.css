@@ -4,24 +4,81 @@
     background: lightgoldenrodyellow;
   }
   
-  .container{
-    width: 400px;
-    height: 250px;
-    background: lightpink;
-  }
+.container{
+  width: 400px;
+  height: 250px;
+  background: lightpink;
+}
+
+.box{
+  width: 50px;
+  height: 50px;
+  background: black;
+  margin: 50px;
+}
+
+.topRow {
+  height: 50%;
+}
+
+.bottomRow {
+  height: 50%;
   
-  .box{
-    width: 50px;
-    height: 50px;
-    background: black;
-    margin: 50px;
+}
+
+@media (max-width: 520px) {
+  .main {
+    display: flex;
+    align-items: center;
   }
-  
-  .topRow {
-    height: 50%;
+
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
-  
-  .bottomRow {
-    height: 50%;
-    
+
+  .box {
+    display: flex;
+    background-color: aquamarine;
   }
+}
+
+@media (min-width: 521px) and (max-width: 900px) {
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  .box {
+    display: flex;
+    background-color: white;
+  }
+}
+
+@media (min-width: 901px) {
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    background-color: aqua;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  .box {
+    display: flex;
+    background-color: white;
+  }
+}
